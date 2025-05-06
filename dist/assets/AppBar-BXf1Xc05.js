@@ -1,0 +1,7 @@
+import"./base-iFpej8ky.js";import{E as c,a as _}from"./el-col-DqlaDnvv.js";import{n as d}from"./el-image-viewer-BD4g0xdz.js";import{E as g,a as f}from"./el-divider-BxH2mNTd.js";import{H as B,a as E,E as I}from"./index-CDegeG6m.js";import{d as b,m as h,q as k,t as a,l as e,S as o,U as n,I as x,e as C}from"./index-ChCffZU7.js";import"./icon-ID1ynMdy.js";const J=`
+// 效果一，Cupertino风格
+JFAppBarCupertino(title: 'JFUI', back: true, trailing: Icon(Icons.search, size: 24))
+
+// 效果二，Material风格
+JFAppBar(title: 'JFUI', back: true, trailing: Icon(Icons.search, size: 24))
+`,v=b({__name:"AppBar",setup(A){return h(()=>{B.highlightAll()}),(F,t)=>{const r=E,i=I,p=f,s=d,l=c,m=_,u=g;return C(),k(u,{style:{height:"100%"},content:"JFUI"},{default:a(()=>[e(i,{separator:"/"},{default:a(()=>[e(r,{to:{path:"/"}},{default:a(()=>t[0]||(t[0]=[n("首页")])),_:1}),e(r,null,{default:a(()=>t[1]||(t[1]=[n("通用组件")])),_:1}),e(r,null,{default:a(()=>t[2]||(t[2]=[n("AppBar")])),_:1})]),_:1}),e(p),t[3]||(t[3]=o("p",null,"页面顶部导航栏封装，包含Cupertino风格和Material风格",-1)),t[4]||(t[4]=o("h3",null,"效果",-1)),e(m,{gutter:5},{default:a(()=>[e(l,{span:8},{default:a(()=>[e(s,{style:{height:"667px"},src:"/src/assets/images/img-appBar1.png",fit:"contain"})]),_:1}),e(l,{span:8},{default:a(()=>[e(s,{style:{height:"667px"},src:"/src/assets/images/img-appBar2.png",fit:"contain"})]),_:1})]),_:1}),t[5]||(t[5]=o("h3",null,"代码",-1)),o("pre",null,[o("code",{class:"code-container"},x(J))])]),_:1})}}});export{v as default};
