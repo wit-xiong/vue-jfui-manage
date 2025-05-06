@@ -11,18 +11,18 @@
         <h3>效果</h3>
         <el-row :gutter="5">
             <el-col :span="8">
-                <el-image style="height: 667px" src="/src/assets/images/img-loading1.png" fit="contain" />
+                <el-image style="height: 667px" :src="Assets.imgLoading1" fit="contain" />
             </el-col>
             <el-col :span="8">
-                <el-image style="height: 667px" src="/src/assets/images/img-loading2.png" fit="contain" />
+                <el-image style="height: 667px" :src="Assets.imgLoading2" fit="contain" />
             </el-col>
             <el-col :span="8">
-                <el-image style="height: 667px" src="/src/assets/images/img-loading3.png" fit="contain" />
+                <el-image style="height: 667px" :src="Assets.imgLoading3" fit="contain" />
             </el-col>
         </el-row>
         <el-row :gutter="5">
             <el-col :span="8">
-                <el-image style="height: 667px" src="/src/assets/images/img-loading4.png" fit="contain" />
+                <el-image style="height: 667px" :src="Assets.imgLoading4" fit="contain" />
             </el-col>
         </el-row>
         <h3>代码</h3>
@@ -33,6 +33,7 @@
 <script setup lang="ts">
 import hljs from 'highlight.js';
 import { onMounted } from 'vue';
+import Assets from '../assets.ts';
 
 const code = `
 // 普通显示

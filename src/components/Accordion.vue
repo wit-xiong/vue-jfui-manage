@@ -9,7 +9,7 @@
         <el-divider />
         <p>手风琴效果</p>
         <h3>效果</h3>
-        <el-image style="height: 667px" src="/src/assets/images/img-accordion.png" fit="contain" />
+        <el-image style="height: 667px" :src="Assets.imgAccordion" fit="contain" />
         <h3>代码</h3>
         <pre><code class="code-container">{{ code }}</code></pre>
     </el-watermark>
@@ -18,6 +18,7 @@
 <script setup lang="ts">
 import hljs from 'highlight.js';
 import { onMounted } from 'vue';
+import Assets from '../assets.ts';
 
 const code = `
 JFAccordion<String>(

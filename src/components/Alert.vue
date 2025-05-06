@@ -11,13 +11,13 @@
         <h3>效果</h3>
         <el-row :gutter="5">
             <el-col :span="8">
-                <el-image style="height: 667px" src="/src/assets/images/img-alert1.png" fit="contain" />
+                <el-image style="height: 667px" :src="Assets.imgAlert1" fit="contain" />
             </el-col>
             <el-col :span="8">
-                <el-image style="height: 667px" src="/src/assets/images/img-alert2.png" fit="contain" />
+                <el-image style="height: 667px" :src="Assets.imgAlert2" fit="contain" />
             </el-col>
             <el-col :span="8">
-                <el-image style="height: 667px" src="/src/assets/images/img-alert3.png" fit="contain" />
+                <el-image style="height: 667px" :src="Assets.imgAlert3" fit="contain" />
             </el-col>
         </el-row>
         <h3>代码</h3>
@@ -28,6 +28,7 @@
 <script setup lang="ts">
 import hljs from 'highlight.js';
 import { onMounted } from 'vue';
+import Assets from '../assets.ts';
 
 const code = `
 // 效果一

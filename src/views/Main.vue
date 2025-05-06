@@ -7,6 +7,7 @@ import {
 } from '@element-plus/icons-vue';
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import Assets from '../assets.ts';
 
 const router = useRouter();
 interface IMenu {
@@ -147,7 +148,7 @@ const onLogoTap = () => {
     <el-container>
         <!-- 头部 -->
         <el-header>
-            <el-image src="/src/assets/images/logo.png" @click="onLogoTap" />
+            <el-image :src="Assets.logo" @click="onLogoTap" />
         </el-header>
         <!-- 左侧菜单 -->
         <el-container>
