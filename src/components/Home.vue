@@ -11,15 +11,30 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue';
+import Assets from '../assets.ts';
 
-const list = ref<String[]>([]);
-
-onMounted(() => {
-  for (let i = 0; i < 20; i++) {
-    list.value.push(`/src/assets/images/img-example${i + 1}.png`);
-  }
-})
+const list = [
+  Assets.imgExample1,
+  Assets.imgExample2,
+  Assets.imgExample3,
+  Assets.imgExample4,
+  Assets.imgExample5,
+  Assets.imgExample6,
+  Assets.imgExample7,
+  Assets.imgExample8,
+  Assets.imgExample9,
+  Assets.imgExample10,
+  Assets.imgExample11,
+  Assets.imgExample12,
+  Assets.imgExample13,
+  Assets.imgExample14,
+  Assets.imgExample15,
+  Assets.imgExample16,
+  Assets.imgExample17,
+  Assets.imgExample18,
+  Assets.imgExample19,
+  Assets.imgExample20,
+];
 </script>
 
 <style scoped>
